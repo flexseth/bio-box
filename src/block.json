@@ -1,0 +1,41 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "bio-box123456/bio-box",
+	"version": "0.1.0",
+	"title": "Bio Box",
+	"category": "theme",
+	"icon": "admin-users",
+	"description": "Shows a configurable bio box",
+	"supports": {
+		"html": false,
+		"color": {
+			"background": true,
+			"gradients": true,
+			"text": true
+		}
+	},
+	"textdomain": "bio-box",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"attributes": {
+		"user": {
+			"type": "object"
+		},
+		"users": {
+			"type": "array" 
+		},
+		"content": {
+			"type": "string",
+			"selector": ".bio-box",
+			"source": "html"
+		},
+		"hasInit": {
+			"type": "boolean"
+		},
+		"sample": {
+			"type": "boolean"
+		}
+	}
+}
